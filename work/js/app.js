@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   getWeather.addEventListener('click', () => {
     const cityNumber = document.getElementById('city-select').value;
     const url = `https://www.jma.go.jp/bosai/forecast/data/forecast/${cityNumber}.json`;
-
+    if (!cityCode) { alert("都市を選択してください。"); return; }
+    
     fetch(url)
     .then( response => {
       return response.json();
