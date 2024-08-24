@@ -25,9 +25,5 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById("tomorrow").lastElementChild.textContent = area.weathers[1];
       document.getElementById("dayAfterTomorrow").lastElementChild.textContent = area.weathers[2];
     })
-
-    // console.log(cityNumber);
-    // console.log(url);
-
   })
 });
