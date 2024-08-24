@@ -12,8 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     .then( weather => {
       console.log(weather);
       const area = weather[0].timeSeries[0].areas[0];
-      let tempsArea = weather[1].tempAverage.areas[0];
+      const tempsArea = weather[1].tempAverage.areas[0];
       console.log(area);
+      console.log(tempsArea);
 
       document.getElementById("publishingOffice").lastElementChild.textContent = weather[0].publishingOffice;
       document.getElementById("reportDatetime").lastElementChild.textContent = weather[0].reportDatetime;
